@@ -1,0 +1,9 @@
+
+{
+  "servers": {
+    "CRUD-Access-Project Docs": {
+      "type": "sse",
+      "url": "https://gitmcp.io/GAGGAH1/CRUD-Access-Project"
+    }
+  }
+}
