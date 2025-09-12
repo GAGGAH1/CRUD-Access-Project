@@ -11,9 +11,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.send('API is running...');
-});
+const authRoutes = require('./routes/authRoute');
+
+
+app.use('/api/user', authRoutes)
+
 
 
 connectDB().then(() => {
